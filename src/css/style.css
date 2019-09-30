@@ -5,7 +5,7 @@
 
 body {
     padding-top:20px;
-    min-width: 550px;
+    min-width: 400px;
 }
 
 .photo {
@@ -38,16 +38,64 @@ body {
     padding-left: 20px;
     overflow: hidden;
 }
-.edu-card-list {
-    margin: 0 auto;
-    display: flex;
+
+@media screen and (min-width: 1000px) {
+    .seg {
+        display: flex;
+        flex-direction: row
+    }
+
+    .seg > div {
+        flex: 1;   
+    }
+
+    .edu-card-list {
+        float:left;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20%;
+        transform: translateX(0%);
+    }
+
+    .edu-cards {
+        margin:auto; 
+        margin-top: 0;
+        float: left;
+        top: 20px;
+    }
 }
-.edu-cards {
-    margin:auto;
-    margin-top: 0;
-    float: left;
-    padding-bottom: 20px;
+
+@media screen and (min-width: 760px)and (max-width: 1000px) {
+    .seg {
+        display: flex;
+        flex-direction: row
+    }
+
+    .seg > div {
+        flex: 1;   
+    }
+    .edu-cards {
+        margin:auto; 
+        margin-top: 0;
+
+    }
 }
+
+@media screen and (min-width: 400px)and (max-width: 760px) {
+    .edu-card-list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .edu-cards {
+        margin:auto; 
+        margin-top: 0;
+    }
+}
+
 .work-exp {
     clear: both;
 }

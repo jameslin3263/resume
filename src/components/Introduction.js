@@ -9,15 +9,15 @@ const Introduction = () => {
             <div className="intro-content">
                 <h2>林毓鈞</h2>
                 <div className="info">
-                <i className="large graduation cap icon"></i>
+                    <i className="large graduation cap icon"></i>
                     Newcastle University
                 </div>
                 <div className="info">
-                <i className="large envelope icon"></i>
+                    <i className="large envelope icon"></i>
                     kinokojiang@hotmail.com
                 </div>
                 <div className="info">
-                <i className="large phone icon"></i>
+                    <i className="large phone icon"></i>
                     0978-026-256
                 </div>
                 <div className="info">

@@ -3,19 +3,15 @@ import '../css/style.css'
 
 
 const Language = (props) => {
-
-    const renderLevel = ({ level }) => {
-        return (
-            level.map((aSection) => {
-                // console.log(aSection)
-                return (
+    const renderLevel = ({ level }) => (
+            level.map((aSection) => (
                     <div className="language-level-section" key={`${level.indexOf(aSection)}`}>
                         {aSection}
                     </div>
                 )
-            })
+            )
         )
-    }
+    
 
     return (
         <div className="edu-cards">
