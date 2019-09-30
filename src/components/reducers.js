@@ -101,7 +101,20 @@ const reducers = {
                 "2. 使用Nightwatch.js 做測試",
                 "3. 架設基本Node server (localhost)"
             ],
-            link:""
+            link:"https://github.com/jameslin3263/dissertation"
+        }
+    },
+    experience: {
+        work: {
+            type: "實習",
+            length: "18 months",
+            tasks: [
+                "1. 實習主要是負責處理跟分析數據，用來協助其他部門做網絡行銷，對業界常用數據分析方法和工具有一定認識，有接觸過SEO跟SEM的經驗。",
+                "2. 有使用Google Analytics 跟Data Studio的經驗。",
+                "3. 有寫過End-to-End Test的經驗，寫過Selenium Test, 使用Nightwatch.js框架，有寫過測試文件。",
+                "4. 有使用過GTM。",
+                "5. 有QA經驗。"
+            ]
         }
     }
 }

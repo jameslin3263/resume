@@ -1,11 +1,25 @@
 import React from 'react'
 import '../css/style.css'
 
-const Experience = () => {
+const Experience = ({experience}) => {
+    const renderWorkExp = experience => {
+        return (
+            Object.values(experience).map((aExp, aId) => (
+                <tr key={aId}>
+                    <td>{aExp.type}</td>
+                    <td>{aExp.length}</td>
+                    <td>{aExp.tasks.map((list, ind) => (
+                        <div key={ind}>{list}</div>
+                    ))}</td>
+                </tr>
+            ))
+        )
+    }
+
     return (
-        <div>
-            Experience
-        </div>
+        <tbody>
+            {renderWorkExp(experience)}
+        </tbody>
     )
 }
 

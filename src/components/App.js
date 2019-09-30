@@ -19,7 +19,18 @@ const App = () => {
                 <i className="briefcase icon"></i>
                 Work Experience
             </h4>
-            <Experience />
+            <div className="ui teal segment">
+                <table className="ui celled table">
+                <thead>
+                    <tr>
+                        <th className="two wide column">Type</th>
+                        <th className="four wide column">Length</th>
+                        <th>Tasks</th>
+                    </tr>
+                </thead>
+                    <Experience experience={reducers.experience} />
+                </table>
+            </div>
 
             <h4 className="ui horizontal divider header">
                 <i className="wrench icon"></i>
@@ -33,8 +44,8 @@ const App = () => {
             </h4>
             <div className="ui orange segment">
                 <table className="ui celled table">
-                <thead >
-                    <tr >
+                <thead>
+                    <tr>
                         <th className="four wide column">Project Name</th>
                         <th className="two wide column">Skills</th>
                         <th>Description</th>
